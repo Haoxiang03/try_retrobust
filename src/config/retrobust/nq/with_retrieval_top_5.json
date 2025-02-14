@@ -1,0 +1,29 @@
+{
+  "experiment_name": "wikihop_eval",
+  "num_retries": 2,
+  "dataset": {
+    "name": "wikihop",
+    "metadata_fields": ["ACC"]
+  },
+  "evaluator": "wikihop",
+  "decomposition": {
+    "num_decompositions": 5,
+    "prompt": "nq_with_retrieval_at5",
+    "retrieve_orig_question": true,
+    "gpt3_accessor": "local_model_accessor",
+    "settings": ["reg", "@5"],
+    "send_question_separately": true,
+    "randomize_retrieval": false,
+    "retrieve_at_5": true,
+    "retriever": "dspy.ColBERTv2",
+    "retriever_url": "http://20.102.90.50:2017/wiki17_abstracts",
+    "llm_wrapper": "fastchat",
+    "gpt_accessor_indices_with_temperature_0": [0],
+    "fastchat_url": "http://localhost:21001",
+    "fastchat_model": "/hpc_stor03/sjtu_home/haoxiang.jiang/models/Qwen2.5-1.5B-Instruct",
+    "main_retriever_dir": "/hpc_stor03/sjtu_home/haoxiang.jiang/RAG/cots/data/retrieval/main_cache_dir",
+    "run_output_dir": "/hpc_stor03/sjtu_home/haoxiang.jiang/RAG/cots/data/outputs/wikihop",
+    "gpt3_accessor_temperature": 0.0
+  },
+  "output_dir": "/hpc_stor03/sjtu_home/haoxiang.jiang/RAG/cots/data/outputs/wikihop"
+}

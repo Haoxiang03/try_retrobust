@@ -1,0 +1,40 @@
+{
+  "experiment_name": "strategy_qa_test",
+  "num_retries": 2,
+  "dataset": {
+    "name": "strategy_qa",
+    "metadata_fields": ["ACC"]
+  },
+  "sampling": {
+    "seed": 11,
+    "num_examples":2
+  },
+  "evaluator": "em",
+  "decomposition": {
+    "num_decompositions": 3,
+    "prompt": "self_ask_strategy_qa_contexts_first",
+    "retrieve_orig_question": true,
+    "gpt3_accessor": "local_model_accessor",
+    "send_question_separately": true,
+    "llm_wrapper": "fastchat",
+    "fastchat_url": "http://localhost:21001",
+    "fastchat_model": "/hpc_stor03/sjtu_home/haoxiang.jiang/models/Qwen2.5-1.5B-Instruct",
+    "retriever": "dspy.ColBERTv2",
+    "retriever_url": "http://20.102.90.50:2017/wiki17_abstracts"
+  },
+  "abstain": {
+    "prompt": "abstain_v3",
+    "question_prompt_prefix": "",
+    "stop_condition": "#",
+    "model": "/hpc_stor03/sjtu_home/haoxiang.jiang/models/Qwen2.5-1.5B-Instruct"
+  },
+  "entailment": {
+    "skip_entailment": true,
+    "shuffle_context": true,
+    "prompt": "strategy_qa_entailment_reversed_random_v2",
+    "question_prompt_prefix": "",
+    "stop_condition": "#",
+    "model": "/hpc_stor03/sjtu_home/haoxiang.jiang/models/Qwen2.5-1.5B-Instruct"
+  },
+  "output_dir": "/hpc_stor03/sjtu_home/haoxiang.jiang/RAG/cots/data/outputs"
+}
