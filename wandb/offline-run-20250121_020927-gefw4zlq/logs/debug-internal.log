@@ -1,0 +1,14 @@
+{"time":"2025-01-21T02:09:27.870602099+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.3","symlink path":"/mnt/cloudstorfs/sjtu_home/haoxiang.jiang/RAG/cots/wandb/offline-run-20250121_020927-gefw4zlq/logs/debug-core.log"}
+{"time":"2025-01-21T02:09:27.994448846+08:00","level":"INFO","msg":"created new stream","id":"gefw4zlq"}
+{"time":"2025-01-21T02:09:27.994512904+08:00","level":"INFO","msg":"stream: started","id":"gefw4zlq"}
+{"time":"2025-01-21T02:09:27.994614495+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"gefw4zlq"}
+{"time":"2025-01-21T02:09:27.994689077+08:00","level":"INFO","msg":"sender: started","stream_id":"gefw4zlq"}
+{"time":"2025-01-21T02:09:27.994777356+08:00","level":"INFO","msg":"handler: started","stream_id":"gefw4zlq"}
+{"time":"2025-01-21T02:09:28.014641131+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-21T02:09:28.485547994+08:00","level":"INFO","msg":"stream: closing","id":"gefw4zlq"}
+{"time":"2025-01-21T02:09:28.485613734+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-21T02:09:28.486534966+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-21T02:09:28.486698459+08:00","level":"INFO","msg":"handler: closed","stream_id":"gefw4zlq"}
+{"time":"2025-01-21T02:09:28.486716345+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"gefw4zlq"}
+{"time":"2025-01-21T02:09:28.48677545+08:00","level":"INFO","msg":"sender: closed","stream_id":"gefw4zlq"}
+{"time":"2025-01-21T02:09:28.490163258+08:00","level":"INFO","msg":"stream: closed","id":"gefw4zlq"}

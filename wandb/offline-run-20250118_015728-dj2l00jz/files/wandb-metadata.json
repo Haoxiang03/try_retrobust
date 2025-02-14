@@ -1,0 +1,57 @@
+{
+  "os": "Linux-3.10.0-693.el7.x86_64-x86_64-with-glibc2.17",
+  "python": "CPython 3.10.16",
+  "startedAt": "2025-01-17T17:57:29.158647Z",
+  "args": [
+    "--config_path",
+    "/hpc_stor03/sjtu_home/haoxiang.jiang/RAG/cots/src/config/retrobust/nq/with_retrieval_top_5.json"
+  ],
+  "program": "/hpc_stor03/sjtu_home/haoxiang.jiang/RAG/cots/src/experiments/retrobust/run.py",
+  "root": "/mnt/cloudstorfs/sjtu_home/haoxiang.jiang/RAG/cots",
+  "host": "d6-hpc-sjtugpu-006",
+  "executable": "/hpc_stor03/sjtu_home/haoxiang.jiang/anaconda3/envs/rag/bin/python",
+  "cpu_count": 32,
+  "cpu_count_logical": 64,
+  "gpu": "NVIDIA A40",
+  "gpu_count": 4,
+  "disk": {
+    "/": {
+      "total": "53660876800",
+      "used": "42036752384"
+    }
+  },
+  "memory": {
+    "total": "236080959488"
+  },
+  "cpu": {
+    "count": 32,
+    "countLogical": 64
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA A40",
+      "memoryTotal": "48305799168",
+      "cudaCores": 10752,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A40",
+      "memoryTotal": "51527024640",
+      "cudaCores": 10752,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A40",
+      "memoryTotal": "48305799168",
+      "cudaCores": 10752,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A40",
+      "memoryTotal": "48305799168",
+      "cudaCores": 10752,
+      "architecture": "Ampere"
+    }
+  ],
+  "cudaVersion": "12.2"
+}
