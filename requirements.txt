@@ -1,0 +1,13 @@
+black
+openai==0.27.10
+google-search-results
+wikipedia
+google-search-results
+dacite
+wandb
+pint
+python-dotenv
+numpy
+pandas
+ipython
+regex
